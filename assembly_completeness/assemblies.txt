@@ -1,0 +1,7 @@
+iso1_onp_a2_1kb_30x_LD0_K25_KCOV2_ADAPT0.01_MINOVL35_RMCHIM1_asm_new_np_pilon_pilon.fasta
+iso1onpa2.contigs.corrected_np_pilon_pilon.fasta
+iso1onpa2_qm_canu_qmdc_new_np_pilon_pilon.fasta
+iso1_onp_keep_bn_keep_ngs.fasta
+GCA_000778455.1_CA_8.2_MHAP_genomic.fasta
+dmel.koren.canu.polished.asm.fasta
+dmel-all-chromosome-r6.16.fasta
