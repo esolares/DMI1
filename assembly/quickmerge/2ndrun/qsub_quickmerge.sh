@@ -20,6 +20,7 @@ options="-hco 5.0 -c 1.5 -l $opt_l -ml 20000"
 #perl -pe 's/>[^\$]*$/">HSeg" . ++$n ."\n"/ge' ${ASM1} > $(basename ${ASM1} .fasta)_new.fasta
 #perl -pe 's/>[^\$]*$/">LSeg" . ++$n ."\n"/ge' ${ASM2} > $(basename ${ASM2} .fasta)_new.fasta
 
+ln -s ../merged.fasta ${ref}
 #removes escape chars and spaces
 cat ${ref} | sed -r 's/[/ =,\t]+/_/g' > $(basename ${ref} .fasta)_new.fasta
 cat ${qry} | sed -r 's/[/ =,\t]+/_/g' > $(basename ${qry} .fasta)_new.fasta
