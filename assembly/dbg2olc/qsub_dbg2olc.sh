@@ -8,12 +8,21 @@
 module load mchakrab/dbg2olc
 module load smrtanalysis canu/2016-01-13
 
+##Variables for editing based on assembly
+#platanus contigs
 CONTIGFILE="iso1.pool_contig.fa"
+#raw reads long reads
 FULLPBREADS="iso1_onp_a2_1kb.fastq"
+#kmer value from canu
+MYKVAL=25
+#expected genome size
+GENOMESIZE=130000000
+#desired coverage 30 is a good value
+COVERAGE=30
+
+###Do not edit below
 BACKBONERAWFA="backbone_raw.fasta"
 DBG2OLCCONS="DBG2OLC_Consensus_info.txt"
-COVERAGE=30
-GENOMESIZE=130000000
 PREFIX=$(basename ${FULLPBREADS} .fastq)
 PACBIOREADS="${PREFIX}_${COVERAGE}x.u.fastq"
 
@@ -42,7 +51,6 @@ fi
 #KmerCovTh 2-10, MinOverlap 50-150, AdaptiveTh 0.01-0.02
 
 MYLD=0
-MYKVAL=25
 MYKMERCOV=2
 MYADAPT=0.01
 MYMINOVL=35
